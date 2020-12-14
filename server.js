@@ -13,7 +13,11 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
     res.show('index.html');
-  });  
+  }); 
+
+app.get('/home', (req, res) => {
+  res.show('index.html');
+});  
 
 app.get('/about', (req, res) => {
     res.show('about.html');
